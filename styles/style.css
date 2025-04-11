@@ -1,5 +1,4 @@
 /* место для вашего кода */
-/* место для вашего кода */
 
 .header {
   display: grid;
@@ -58,7 +57,7 @@
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }
 
 .cover__description-text {
@@ -77,10 +76,9 @@
   padding: 12px 32px 11px 31px;
   font-size: 22px;
   cursor: pointer;
-  border-radius: 4px;
   transition: all 0.3s ease;
   z-index: 2;
-  margin-left: 80px;
+  margin-left: 138px;
   text-transform: uppercase;
 }
 
@@ -102,8 +100,10 @@
   text-transform: uppercase;
   z-index: 2;
   font-weight: 700;
-  letter-spacing: 20px;
-  padding: 25px 5px 30px 20px;
+  letter-spacing: 35px;
+  padding-top: 65px;
+  padding-bottom: 0px;
+  padding-left: 50px;
 }
 
 .aligned-text {
@@ -131,7 +131,7 @@
 }
 
 .lots {
-  margin: 188px 24px 0;
+  margin: 178px 24px 0;
 }
 
 .lots ul {
@@ -161,9 +161,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px;
+  padding: 40px;
   background-size: cover;
   background-position: center;
+  height: 596px;
 }
 
 .lots__heading {
@@ -189,6 +190,8 @@
   font-weight: 700;
   z-index: 2;
   text-transform: uppercase;
+  margin-bottom: 27px;
+  margin-left: 40px;
 }
 
 .lots__heading {
@@ -256,7 +259,7 @@
 }
 
 .footer {
-  padding: 60px 50px;
+  padding: 180px 50px;
 }
 
 .footer__container {
