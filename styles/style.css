@@ -1,1 +1,380 @@
 /* место для вашего кода */
+/* место для вашего кода */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background-color: white;
+    padding: 0 40px;
+    width: 1100px;
+    height: 293px;
+  }
+  
+  .header__menu {
+    display: flex;
+    gap: 40px;
+  }
+  
+  
+  .header__links-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    list-style-type: circle;
+    padding-left: 5px;
+  }
+  
+  
+  .header__link {
+    color: black;
+    font-size: 16px;
+    text-underline-offset: 4px; 
+  }
+  
+  .header__logo-image {
+    display: block;
+    width: 145px;
+    max-height: 105px;
+  }
+  
+  .header__address {
+    margin-left: 194px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .cover{
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .cover__description-text{
+    font-size:22px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color:white;
+    z-index: 2;
+    letter-spacing: 2px;
+  }
+  
+  .bet-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 32px 11px 31px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    z-index: 2;
+    margin-left:80px;
+    text-transform: uppercase;
+  }
+  
+  .cover::after{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .nameof {
+    font-size:90px;
+    color:white;
+    position:relative;
+    text-transform: uppercase;
+    z-index:2;
+    font-weight: 700;
+    letter-spacing:20px;
+    padding:25px 5px 30px 20px;
+  }
+  
+  
+  .aligned-text{
+    display:block;
+    text-align: start;
+  }
+  .aligned-text_center{
+    display:block;
+    text-align: center;
+    margin-top:20px;
+    margin-left:30px;
+  }
+  .aligned-text_right{
+    display:block;
+    text-align: end;
+    margin-top:20px;
+    margin-right:-30px;
+    margin-bottom:77px;
+  }
+  
+  .cover__description{
+    display:flex;
+    align-items: center;
+    padding: 0 40px 50px 50px;
+  }
+  
+  
+  .lots{
+    margin: 188px 24px 0;
+  }
+  
+  .lots ul{
+    display:flex;
+    flex-wrap:wrap;
+    list-style: none;
+    gap:20px;
+    padding:0;
+    margin:0;
+  }
+  
+  .lots li{
+    width:300px;
+    min-height:450px;
+    flex-grow:1;
+  }
+  
+  .lots li a{
+    display:block;
+    height:100%;
+    text-decoration:none;
+  }
+  
+  .lots article{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .lots__heading{
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  .card__text{
+    justify-content: flex-end;
+    color: white;
+    z-index: 2;
+  }
+  
+  .lots article::after{
+    content:'';
+    position: absolute;
+    inset:0;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index:0;
+  }
+  
+  .lots__title{
+    font-size:40px;
+    font-weight:700;
+    z-index: 2;
+    text-transform: uppercase;
+  }
+  
+  .lots__heading{
+    font-size:22px;
+    font-weight: 100px;
+    justify-content: baseline;
+    justify-content: flex-start;
+    color: white;
+    z-index: 2;
+  }
+  
+  .lots__more-div{
+    margin-top: 35px;
+    margin-left: 40px;
+  }
+  
+  .lots__more-link{
+    font-size: 20px;
+  }
+  
+  .card__text{
+    font-size:20px;
+    font-weight: 100px;
+    justify-content: flex-end;
+  }
+  
+  .about{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 25px;
+    margin:180px 50px 0;
+  }
+  
+  .about__column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about__logo {
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .about__logo-image {
+    width: 148px;
+    height: 114px;
+  }
+  
+  .about__title {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 100px;
+  }
+  
+  .about__text {
+    font-size: 20px;
+    margin-top: 100px;
+  }
+  
+  /**/
+  .footer {
+    padding: 60px 50px;
+  }
+  
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+  }
+  
+  .address {
+    font-style: normal;
+    line-height: 1.4;
+  }
+  
+  .address a {
+    color: inherit;
+  }
+  
+  .footer__menu {
+    text-align: center;
+  }
+  
+  .footer__menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .footer__menu-link {
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .footer__social-list {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__social-link {
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .footer__social-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* первую колонку займет меню, вторую — логотип, а третью — блок с адресом.*/
+  /*Используйте семантический тег для адреса — <address></address>. Сбросьте стандартные браузерные стили для текста и задайте собственные. Блоку адреса отводится колонка в шапке шириной в одну фракцию. Чтобы он занял в этой колонке своё место, задайте ему свойство max-width — значение максимальной ширины возьмите из макета. И выровняйте блок внутри колонки, задав ему свойство justify-self со значением end.*/
+  
+  
+  
+  
+  /*
+  .header_panel {
+      max-width: 1100px;
+      height: 293px;
+      margin: 0 auto;
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      padding-left: 50px;
+    }
+    
+    
+    .navigation_bar {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      font-family: 'Raleway-Regular', sans-serif;
+    }
+    
+    .Logo {
+      max-width: 145px;
+      max-height: 105px;
+    }
+    
+    .contact_list {
+      text-align: right;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+  /* .Poster {
+    }
+    
+  
+    .Poster {
+      position: relative;
+      width: 1100px;
+      height: 757px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    
+    .PosterImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
+  
+    .word-from-poster {
+      font-size: 100px;
+      letter-spacing: 10px;
+      margin: 0;
+      line-height: 1.2;
+    } */
