@@ -13,7 +13,9 @@
     <header class="header">
       <div class="header__menu">
         <ul class="header__links-list">
-          <p>главная</p>
+          <li class="header__links-list-item header__links-list-item--no-bullet">
+            <a class="lots__more-link">главная</a>
+          </li>
           <li class="header__links-list-item">
             <a class="header__link" href="#">посмотреть лоты</a>
           </li>
@@ -22,15 +24,9 @@
           </li>
         </ul>
       </div>
-      <div class="header__logo">
-        <a href="#">
-          <img
-            class="header__logo-image"
-            src="./images/logo-black.svg"
-            alt="логотип аукциона Оно тебе надо"
-          />
-        </a>
-      </div>
+      <a href="#" class="header__logo-link">
+        <img class="header__logo-image" src="./images/logo-black.svg" alt="логотип аукциона Оно тебе надо" />
+      </a>
       <address class="address header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a><br />
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
@@ -38,6 +34,7 @@
       </address>
     </header>
     <section class="cover">
+      <div class="overlay"></div>
       <h1>
         <span class="nameof aligned-text">Оно </span>
         <span class="nameof aligned-text_center">тебе </span>
@@ -50,59 +47,41 @@
         <h3 class="cover__description-text">
           Аукцион вещей, в которые никто не верил
         </h3>
-        <button class="bet-button">Сделать ставку</button>
+        <button class="bet-button" type="button">Сделать ставку</button>
       </div>
     </section>
     <section class="lots">
       <h2 class="lots__title">Лоты</h2>
       <ul class="lots__list">
-        <li>
-          <a href="#">
-            <article style="background-image: url('./images/card-lot-01.jpg')">
-              <h3 class="lots__heading">
-                Фильм режиссёра, который бросил киношколу
-              </h3>
-              <p class="card__text">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы не знали, что режиссёр — Пол Томас Андерсон?
-              </p>
-            </article>
+        <li class="lots__item">
+          <a href="#" class="lots__link" style="background-image: url('./images/card-lot-01.jpg')">
+            <span class="lots__overlay"></span>
+            <p class="lots__heading">Фильм режиссёра, который бросил киношколу</p>
+            <p class="lots__text">
+              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы не знали, что режиссёр — Пол Томас Андерсон?
+            </p>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <article style="background-image: url('./images/card-lot-02.jpg')">
-              <h3 class="lots__heading">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </h3>
-              <p class="card__text">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно
-                рассказывается о 16 июня 1904 года и об истории литературы,
-                начиная с античных времён. И это всё накладывается на эпическую
-                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
-                Джойса?
-              </p>
-            </article>
+        <li class="lots__item">
+          <a href="#" class="lots__link" style="background-image: url('./images/card-lot-02.jpg')">
+            <span class="lots__overlay"></span>
+            <p class="lots__heading">Книга, где описан один скучный день из жизни рекламного агента</p>
+            <p class="lots__text">
+              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+            </p>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <article style="background-image: url('./images/card-lot-03.jpg')">
-              <h3 class="lots__heading">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </h3>
-              <p class="card__text">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                котиков... Сколько бы вы на такое поставили, если бы не знали,
-                что это — одна из революционных работ Кандинского?
-              </p>
-            </article>
+        <li class="lots__item">
+          <a href="#" class="lots__link" style="background-image: url('./images/card-lot-03.jpg')">
+            <span class="lots__overlay"></span>
+            <p class="lots__heading">Картина, которую повторит даже 5-летний сын маминой подруги</p>
+            <p class="lots__text">
+              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
+            </p>
           </a>
         </li>
       </ul>
-      <div class="lots__more-div">
+      <div class="lots__more">
         <a class="lots__more-link" href="#">посмотреть больше</a>
       </div>
     </section>
@@ -165,7 +144,7 @@
           <li class="footer__social-list-item">
             <a class="footer__social-link" href="#">
               <img
-                src="images/yt.svg"
+                src="./images/yt.svg"
                 alt="YouTube"
                 class="footer__social-icon"
               />
@@ -173,13 +152,13 @@
           </li>
           <li class="footer__social-list-item">
             <a class="footer__social-link" href="#">
-              <img src="images/vk.svg" alt="VK" class="footer__social-icon" />
+              <img src="./images/vk.svg" alt="VK" class="footer__social-icon" />
             </a>
           </li>
           <li class="footer__social-list-item">
             <a class="footer__social-link" href="#">
               <img
-                src="images/pinterest.svg"
+                src="./images/pinterest.svg"
                 alt="Pinterest"
                 class="footer__social-icon"
               />
