@@ -1,4 +1,4 @@
-/* 11:38 */
+/* 11:53 */
 
 .header {
   display: grid;
@@ -178,7 +178,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 50px 40px;
+  padding: 50px 40px 39px 40px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -217,7 +217,7 @@
 }
 
 .lots__more {
-  margin-top: 30px;
+  margin-top: 31px;
   margin-left: 40px;
   text-transform: lowercase;
 }
@@ -273,7 +273,7 @@
 }
 
 .footer {
-  padding: 161px 51px 80px;
+  padding: 159.8px 51px 80px;
 }
 
 .footer__container {
