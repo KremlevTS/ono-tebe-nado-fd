@@ -178,7 +178,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 50px 42px 47px 40px; /*Размер 0.5*/
+  padding: 50px 42px 47px 40px; /*Размер 0.5 макета*/
   background-size: cover;
   background-position: center;
   position: relative;
@@ -266,6 +266,7 @@
 
 .about__pspace {
   padding-top: 25px;
+  word-spacing: -0.039em;
 }
 
 .about__text {
@@ -274,7 +275,7 @@
 }
 
 .footer {
-  padding: 160px 50px 80px;
+  padding: 161px 50px 80px;
 }
 
 .footer__container {
